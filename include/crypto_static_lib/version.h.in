@@ -1,0 +1,22 @@
+#pragma once
+
+#include <cstdint>
+#include <string_view>
+
+#define CRYPTO_STATIC_LIB_VERSION_MAJOR @PROJECT_VERSION_MAJOR@
+#define CRYPTO_STATIC_LIB_VERSION_MINOR @PROJECT_VERSION_MINOR@
+#define CRYPTO_STATIC_LIB_VERSION_PATCH @PROJECT_VERSION_PATCH@
+#define CRYPTO_STATIC_LIB_VERSION_TEXT "@PROJECT_VERSION@"
+
+namespace crypto_static_lib {
+
+struct version_info {
+    std::uint32_t major;
+    std::uint32_t minor;
+    std::uint32_t patch;
+    std::string_view text;
+};
+
+const version_info& version() noexcept;
+
+}  // namespace crypto_static_lib

@@ -1,0 +1,4 @@
+add_executable(CryptoStaticLibVersionTests version_test.cpp)
+target_link_libraries(CryptoStaticLibVersionTests PRIVATE CryptoStaticLib::CryptoStaticLib)
+
+add_test(NAME version COMMAND CryptoStaticLibVersionTests)
