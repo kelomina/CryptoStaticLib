@@ -19,7 +19,7 @@ project(CryptoStaticLib VERSION 0.1.0 LANGUAGES CXX)
 
 ## 发布前检查清单
 
-1. 更新 `CMakeLists.txt` 版本号与 `CHANGELOG.md`。
+1. 更新 `CMakeLists.txt` 版本号后，同步更新 `CHANGELOG.md` 与测试中的期望版本（`tests/version_test.cpp`、`tests/consumer/main.cpp`）。
 2. Debug 与 Release 构建、测试全部通过。
 3. 安装清单齐全，且不含 `version.h.in`。
 4. 消费者 `find_package` 配置、构建、运行通过。

@@ -7,7 +7,7 @@
 - 构建工具：CMake 3.25+
 - Shell：PowerShell
 
-实际仓库使用的生成器记录在 `CMakePresets.json`，当前为 `Visual Studio 18 2026` 与 `-A x64`。若本机不可用，请按 [releasing.md](releasing.md) 的发布前检查同步调整 preset。
+实际仓库使用的生成器记录在 `CMakePresets.json`，当前为 `Visual Studio 18 2026` 与 `-A x64`。若本机不可用，请用 `cmake --help` 确认可用生成器，并同步修改 `CMakePresets.json`。
 
 ## Debug 构建
 
@@ -45,7 +45,8 @@ build/install/
     └── cmake/CryptoStaticLib/
         ├── CryptoStaticLibConfig.cmake
         ├── CryptoStaticLibConfigVersion.cmake
-        └── CryptoStaticLibTargets.cmake
+        ├── CryptoStaticLibTargets.cmake
+        └── CryptoStaticLibTargets-debug.cmake
 ```
 
 ## 下游消费
