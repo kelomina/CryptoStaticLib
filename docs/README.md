@@ -16,4 +16,3 @@
 - [../CHANGELOG.md](../CHANGELOG.md)
 - [../CONTRIBUTING.md](../CONTRIBUTING.md)
 - [../SECURITY.md](../SECURITY.md)
-- [../AGENTS.md](../AGENTS.md)
